@@ -1,0 +1,348 @@
+
+/* ШАПКА */
+.hamburger{
+    display: none;
+}
+.menu_logo{
+    list-style-type: none;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+ .main_nav{
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0px 66px 0px 0px;
+}
+.menu .menu_item{
+    list-style-type: none;
+    margin: 0 0 0 40px;
+} 
+.menu .menu_item .menu_link:hover{
+    display: inline;
+	background-repeat: no-repeat;
+	background-position: center bottom 1px;
+	background-size: 100% 3px;
+    background-image: linear-gradient(to right, fuchsia , red);
+}
+.menu .menu_item .menu_link.current-menu-item{
+    display: inline;
+	background-repeat: no-repeat;
+	background-position: center bottom 1px;
+	background-size: 100% 3px;
+    background-image: linear-gradient(to right, fuchsia , red);
+}
+.menu .menu_item .menu_link{
+    font-size: 30px;
+    font-family: 'Ubuntu Regular';
+    color: black;
+    text-decoration: none;
+}
+
+.count{
+    font-size: 30px;
+    margin: 0px 0px 0px 7px;
+    background: #2F80ED;
+    border-radius: 110px;
+    padding: 0px 7px 0 7px;
+    color: white;
+}
+
+
+/* 1 СТРАНИЦА СЛАЙДЕР */
+    .slider{
+        min-height: 890px;
+    }
+    .slider .slide{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .slider h1{
+        font-size: 90px;
+        font-family: 'Ubuntu Bold';
+        color: #555555;
+        margin: 0 0;
+    }
+    .slider .slider_img{
+        max-width:100%;
+    }
+    .slider .price{
+        font-size: 70px;
+        font-family: 'Ubuntu Regular';
+        color: #555555;
+    }
+
+    .slider  .btn_descr{
+        font-size: 32px;
+        font-family: 'Ubuntu Regular';
+        color: black;
+        color: #2F80ED;
+    }
+    .descr{
+        margin: 0px 0px 0 -140px;
+    }
+
+ /* КАТАЛОГ */
+.submenu{
+    display: flex;
+    justify-content: center;
+}
+.submenu .submenu_item{
+    list-style-type: none;
+}
+.submenu .submenu_item .submenu_link{
+    margin: 0 110px 0 50px;
+    font-family: 'Roboto Regular';
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+}
+.submenu .submenu_item .submenu_link :active{
+    font-family: 'Roboto Bold';
+}
+.catalog_main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);   
+}
+.catalog_main .product{
+    margin: 90px 0 0 20px ;
+    list-style-type: none;
+    text-decoration: none;
+}
+.catalog_main .product .descr{
+    margin: 10px 0 0 50px;
+}
+.catalog_main .product .descr .catalog_name{
+    font-size: 20px;
+    font-family:"Roboto Light";
+    color: black;
+}
+.catalog_main .product .descr .price{
+    font-size: 38px;
+    font-family: 'Roboto Bold';
+    margin: 0 0 0 -28px ;
+    color: black;
+}
+
+/* ИНФО О ТОВАРЕ */
+.back{
+    font-size: 35px;
+    font-family: 'Roboto Bold';
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    margin: 0 0 0 150px;
+}
+.product_info{
+    display: flex;
+}
+
+.product_info .basic_info{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    margin: 100px 0px 0px 100px;
+    font-size: 35px;
+    font-family: 'Roboto Bold';
+}
+.product_info .basic_info .price_product{
+    margin: 0px 0px 0px 300px;
+}
+.product_info .add_info{
+    margin: 35px 0px 0px 100px;
+    font-size: 20px;
+    font-family: 'Roboto Light';
+}
+.product_info .add_info .Bold{
+    font-size: 23px;
+    margin: 45px 0 0 0;
+    font-family: 'Roboto Bold';
+}
+.product_info .add_info .Bold .Light{
+    font-family: 'Roboto Light';
+}
+.product_info .jacket{
+    width: 370px;
+    height: 720px;
+    margin: 50px 0px 0px 350px;
+}
+ summary{
+     margin: 30px 0 5px 0;
+ }
+.content{
+    font-size: 18px;
+    font-family: 'Roboto Regular';
+}
+
+.pay{
+    display: flex;
+    margin: 190px -42px 0 0;
+    font-size: 25px;
+    font-family: 'Roboto light';
+    color: black;
+    justify-content: flex-end;
+}
+.pay_type{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.pay_type .apple_pay{
+    height: 55px;
+    width: 85px;
+}
+.pay_type .mastercard{
+    height: 70px;
+    width: 85px;
+}
+
+.pay_type .visa{
+    height: 70px;
+    width: 85px;
+}
+    /* Сертификаты */
+.certificate_descr{
+    font-family:'Roboto Bold';  
+    font-size: 25px;
+    margin: 0px 0px 70px 130px;
+}
+.certificate_img{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 0px 0px 130px;
+}
+
+
+
+
+    /* АДАПТАЦИЯ */
+    @media only screen and (max-width:1440px){
+        .slider h1{
+            font-size: 60px;
+        }
+        .slider .price {
+            font-size: 50px;
+        }
+        .slider .btn_descr{
+            font-size: 25px;
+        }
+
+    }
+    @media only screen and (max-width:1270px){
+        .slider h1{
+            font-size: 55px;
+        }
+        .slider .price {
+            font-size: 40px;
+        }
+        .slider .btn_descr{
+            font-size: 20px;
+        }
+    }
+    @media only screen and (max-width:1024px){
+        .menu .menu_item .menu_link{
+            font-size: 21px;
+        }
+        .menu_item .slider_img{
+            width: 220px;
+        }
+        .menu .Logo_img{
+            width: 200px;
+        }
+    }
+    @media(max-width: 768px){
+        .main_nav {
+            position: fixed;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            top: -100%;
+            left: 0;
+            width: 70%;
+            height: 23%;
+            padding: 30px 0px;
+            transition: 0.6s all;
+            z-index: 10;
+            }
+            .main_nav_active {
+              top: 0;
+              background-color: #00000091;
+            }
+            .menu_item {
+              margin: 10px 0 0 40px;
+             }
+             .menu .menu_item .menu_link {
+              font-size: 20px;
+              color: white;
+             }
+        .hamburger{
+            display: block;
+            transform: translateY(-50%);
+            width: 40px;
+            margin: 30px 25px 0px 0px;
+        }
+        .hamburger span{
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color:black;
+            transition: 0,5s all;
+        }
+        .hamburger .distance{
+            margin: 10px 0 -4px 0;
+        }
+        .hamburger_active span:nth-child(1){
+            transform: rotate(-45deg);
+        }
+        .hamburger_active span:nth-child(2){
+            transform: rotate(-45deg);
+            transform: translateY(-11px) rotate(45deg);
+        }
+        .count{
+            margin: 0px 0px 0px 35px;
+        }
+        .box_1{
+            margin: 0 0 10px 0;
+        }
+        .slider{
+            margin: 42px 0 0 0;
+        }
+        .slider .slide{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .slider_img{
+            height: auto;
+            width: 766px;
+        }
+        .descr{
+            order: -5;
+            margin: 0 0px 0px 45px;
+        }
+    }
+    @media(max-width: 515px){
+        .slider h1{
+            font-size: 50px;
+        }
+    }
+    @media(max-width: 425px){
+        .slider h1{
+            font-size: 40px;
+        }
+        .slider .price{
+            font-size: 30px;
+        }
+        .slider .btn_descr{
+            font-size: 15px;
+        }
+        .menu .Logo_img{
+            width: 160px;
+        }
+    }
+
+
